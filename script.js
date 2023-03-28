@@ -1,10 +1,5 @@
-const form = document.querySelector('form');
-const url = document.querySelector('#url');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  
-  const name = encodeURIComponent(document.querySelector('#name').value);
-  const year = encodeURIComponent(document.querySelector('#year').value);
-  
-  url.textContent = `https://localhost:8080/?name=${name}&year=${year}`;
+function fn(){
+    var Name = document.getElementById('name').value;
+  var year = document.getElementById('year').value;
+    document.getElementById('url').innerHTML += '<br>'+"https://localhost:8080/"+"Name="   +Name+"&"+"Year="+year ;
+}
