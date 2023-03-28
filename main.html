@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <script type="text/javascript" src="./script.js">
-</script>
-       <h3 id="url"></h3>
-	  <input type="text" id="name"name="name">name</input>
-	  <input type="number"id="year"name="year" min="2000">year</input>
-	  <button id="button" onclick="fn()">submit</button>
-	  
-  </body>
+
+<body>
+  <h3 id="url">https://localhost:8080/</h3>
+  <label for="name">Name</label>
+  <br>
+  <input name="name" id="name" type="text">
+  <br>
+  <label for="year">Year</label>
+  <br>
+  <input name="year" id="year" type="number" min="1000" max="5000">
+  <br><br>
+  <button id="button">Submit</button>
+  <script type="text/javascript" src="./script.js">
+  </script>
+</body>
 
 </html>
